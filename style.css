@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #6200EE;
+}
+
 
 a {
     text-decoration: none;
@@ -39,9 +43,25 @@ nav a::after {
     right: 0;
     margin: auto;
     height: 2px;
-    background-color: red;
+    background-color: var(--primary-color);
     transition: width 0.2s linear;
 }
 nav a:hover::after {
     width: 100%;
+}
+
+.container {
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
